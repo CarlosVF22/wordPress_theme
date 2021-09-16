@@ -1,0 +1,187 @@
+/*
+Theme name: homePizzeria
+Version: 1.0
+Description: Sitio creado para la vacante en la empresa tuatara agencia boutique
+Author: Carlos Eduardo Vasquez Florez
+Authon URI: https://github.com/CarlosVf22
+License: GNU General Public Licence v2 or later
+License: http://www.gnu.org/licenses/gpl-2.0.html
+
+*/
+/* header */
+.menu-principal li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.menu-principal a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+/* nabvar */
+.navbar{
+    padding: 0;
+}
+dl,ol,ul{
+    margin: 0;
+    padding: 0;
+
+}
+.navbar-collapse{
+    justify-content: center;
+    padding-top: 10px;
+}
+.nav-title-container{
+    position: absolute;
+    top:0;
+    width: 100%;
+    padding-top: 5%;
+}
+/* background-image */
+#menu-image{
+    justify-content: center;
+}
+.row{
+    --bs-gutter-x:0 !important;
+}
+.header-container{
+    position: relative;
+    
+}
+.background-image img {
+    width: 100%;
+    height: 100vh;
+    object-fit:cover;
+    position: relative;
+    border-bottom-right-radius: 75px;
+    border-bottom-left-radius: 75px;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+#overlay-header{
+    border-bottom-right-radius: 75px !important;
+    border-bottom-left-radius: 75px !important;
+}
+.image-container{
+    display: flex;
+    justify-content: center;
+}
+/* title text */
+.container-text-title{
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 15vh;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.text-container{
+    text-align: center;
+    color: whitesmoke;
+    padding: 5vh;
+}
+.button-orden-container{
+    display: flex;
+    justify-content: center;
+}
+/* image-pizza-top */
+.img-thumbnail{
+    background-color: transparent;
+    border: none;
+    max-width: 100%;
+}
+.pizza-top-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+}
+/* ------------fin header------------------ */
+
+/* ----------------main------------------------ */
+.main-container{
+    background: linear-gradient(to top,rgba(247, 228, 121, 0.938), white);
+    
+}
+
+/* ---------------ingredientes---------------- */
+.lista-ingredientes img{
+    border-radius: 50%;
+}
+.ingrediente-container{
+    display: flex;
+    flex-direction: column;
+}
+.ingrediente-container h4{
+    color: #e00531;
+    font-weight: 900;
+}
+.lista-ingredientes{
+    padding-top: 40%;
+}
+/* ---------------fin ingredientes--------------- */
+
+/* -------------------information------------------- */
+.image-background-information img{
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+}
+.image-background-information{
+    margin: 0;
+}
+.container-information{
+    position: relative;
+}
+.information-contenido{
+    color: whitesmoke;
+    font-family: fantasy;
+}
+#overlay-information{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* ----------------------fin information -------------- */
+
+/* -----------------fin main-------------------- */
+
+/* ---------------footer------------------------ */
+.footer-container{
+    background-color: rgba(158, 157, 150, 0.938);
+}
+.footer-container p{
+    margin:0;
+}
+/* ---------------fin footer------------------------ */
+
+/* ---------------media queries---------------------- */
+@media(min-width:320px) and (max-width:450px){
+    #salsaSecreta{
+        padding-top: 100px;
+    }
+}
+@media(min-width:451px) and (max-width:600px){
+    #salsaSecreta{
+        padding-top:75px ;
+    }
+}
+@media(min-width:601px) and (max-width:767px){
+    #salsaSecreta{
+        padding-top:50px ;
+    }
+}
+@media(min-width:1100px){
+    .lista-ingredientes{
+        padding-top: 0;
+    }
+    #queso{
+        padding-top: 360px;
+    }
+    
+}
